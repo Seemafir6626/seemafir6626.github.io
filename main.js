@@ -284,7 +284,9 @@ function render(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ckb" ? "rtl" : "ltr";
   document.title = t["doc.title"];
-  document.getElementById("langBtn").textContent = lang === "ckb" ? "English" : "کوردی";
+  const langBtn = document.getElementById("langBtn");
+  langBtn.textContent = lang === "ckb" ? "English" : "کوردی";
+  langBtn.lang = lang === "ckb" ? "en" : "ckb";
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     node.textContent = t[node.dataset.i18n];
