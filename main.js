@@ -4,7 +4,7 @@ const PHOTO = "photo.jpg";
 const TEXT = {
   en: {
     "doc.title": "Mahmood Khdir — Portfolio",
-    name: "Mahmood Khdir",
+    name: "Mahmood Khdir Faqe Rasul",
     "nav.profile": "Profile",
     "nav.projects": "Projects",
     "nav.research": "Research",
@@ -41,8 +41,8 @@ const TEXT = {
     ],
   },
   ckb: {
-    "doc.title": "مەحموود خدر — پۆرتفۆلیۆ",
-    name: "مەحموود خدر",
+    "doc.title": "مەحمود خدر — پۆرتفۆلیۆ",
+    name: "مەحمود خدر فقێ ڕەسوڵ",
     "nav.profile": "ناساندن",
     "nav.projects": "پڕۆژەکان",
     "nav.research": "توێژینەوە",
