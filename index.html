@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ckb" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahmood Khdir — Bioprogrammer</title>
+  <meta name="description" content="پۆرتفۆلیۆی مەحموود خدر: پڕۆژەکانی وێب و مۆبایل بۆ زانکۆی ڕاپەڕین و زانستی ژیان.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">BoKwe<span>_DEV</span></a>
+    <nav class="nav">
+      <a href="#projects" data-i18n="nav.projects"></a>
+      <a href="#skills" data-i18n="nav.skills"></a>
+      <a href="#research" data-i18n="nav.research"></a>
+      <a href="#contact" data-i18n="nav.contact"></a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" aria-label="Language">EN</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="identity">
+        <div class="avatar" id="avatar"></div>
+        <div>
+          <p class="name" data-i18n="hero.name"></p>
+          <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+        </div>
+      </div>
+      <h1 data-i18n="hero.title"></h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects" data-i18n="hero.cta"></a>
+        <a class="btn" href="https://github.com/mahmodfaqe" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <ul class="stats" id="stats"></ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 data-i18n="projects.title"></h2>
+      <p class="section-lead" data-i18n="projects.lead"></p>
+      <div class="grid" id="projectGrid"></div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 data-i18n="skills.title"></h2>
+      <div class="skills" id="skillGroups"></div>
+    </section>
+
+    <section id="research" class="section research">
+      <h2 data-i18n="research.title"></h2>
+      <div class="research-card">
+        <h3 data-i18n="research.name"></h3>
+        <p data-i18n="research.body"></p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 data-i18n="contact.title"></h2>
+      <p data-i18n="contact.body"></p>
+      <div class="contacts" id="contactGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer" data-i18n="footer"></footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
