@@ -195,7 +195,7 @@ const PROJECTS = [
     tags: ["Flask", "SQLAlchemy", "Vue.js"],
   },
   {
-    title: { en: "BoKwe Multilingual Website", ckb: "ماڵپەڕی  BoKwe" },
+    title: { en: "BoKwe Website", ckb: "ماڵپەڕی  BoKwe" },
     body: {
       en: "An website for Turist.",
       ckb: "ماڵپەڕێکی خزمەتگوزاری گەشتیاری.",
