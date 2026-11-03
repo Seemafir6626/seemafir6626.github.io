@@ -21,7 +21,7 @@ const TEXT = {
     "education.degree": "Bachelor of Science in Biology (in progress)",
     "education.place": "Department of Biology, College of Science, University of Raparin, Ranya",
     "projects.title": "Selected Projects",
-    "projects.lead": "All of the projects below were designed and developed by me, from requirements to deployment.",
+    "projects.lead": "I designed and developed the software for every project below, from requirements to deployment. For team projects, the team and my role are noted on the card.",
     "research.title": "Research",
     "research.before": "Green Synthesis of a MgO–ZnO–CuO Ternary Nanocomposite Mediated by ",
     "research.after": " and Evaluation of Its Antibacterial and Antibiofilm Activities",
@@ -31,12 +31,13 @@ const TEXT = {
     "contact.body": "For academic collaboration, project enquiries or professional correspondence, please use any of the channels below.",
     footer: "© 2026 Mahmood Khdir. All rights reserved.",
     production: "In production",
+    published: "Published",
     development: "Under development",
     figures: [
-      ["8", "Projects"],
-      ["6", "Live websites"],
+      ["11", "Projects"],
+      ["8", "Live websites"],
       ["3", "Mobile applications"],
-      ["3", "Languages supported"],
+      ["3", "Core languages"],
     ],
   },
   ckb: {
@@ -58,7 +59,7 @@ const TEXT = {
     "education.degree": "بەکالۆریۆس لە بایۆلۆجی (بەردەوامە)",
     "education.place": "بەشی بایۆلۆجی، کۆلێژی زانست، زانکۆی ڕاپەڕین، ڕانیە",
     "projects.title": "پڕۆژە هەڵبژێردراوەکان",
-    "projects.lead": "هەموو ئەم پڕۆژانە، لە داواکارییەکانەوە تا بڵاوکردنەوە، لەلایەن خۆمەوە دیزاین کراون و پەرەیان پێدراوە.",
+    "projects.lead": "بەشی نەرمەکاڵای هەموو ئەم پڕۆژانە، لە داواکارییەکانەوە تا بڵاوکردنەوە، خۆم دیزاینم کردووە و پەرەم پێداوە. لە پڕۆژە بەکۆمەڵەکاندا، تیمەکە و ڕۆڵی من لەسەر کارتەکە نووسراون.",
     "research.title": "توێژینەوە",
     "research.before": "سەنتێزی سەوزی نانۆکۆمپۆزیتی سێیانەی MgO–ZnO–CuO بە یارمەتیی ڕووەکی ",
     "research.after": " و هەڵسەنگاندنی چالاکییە دژە بەکتریایی و دژە بایۆفیلمییەکانی",
@@ -68,12 +69,13 @@ const TEXT = {
     "contact.body": "بۆ هاوکاریی ئەکادیمی، پرسیار دەربارەی پڕۆژەکان یان نامەی فەرمی، دەتوانن لە ڕێگەی یەکێک لەم کەناڵانەوە پەیوەندیم پێوە بکەن.",
     footer: "© ٢٠٢٦ مەحموود خدر. هەموو مافەکان پارێزراون.",
     production: "لە بەکارهێناندایە",
+    published: "بڵاوکراوەتەوە",
     development: "لە قۆناغی پەرەپێداندایە",
     figures: [
-      ["٨", "پڕۆژە"],
-      ["٦", "ماڵپەڕی کارا"],
+      ["١١", "پڕۆژە"],
+      ["٨", "ماڵپەڕی کارا"],
       ["٣", "ئەپی مۆبایل"],
-      ["٣", "زمانی پشتگیریکراو"],
+      ["٣", "زمانی سەرەکی"],
     ],
   },
 };
@@ -87,17 +89,24 @@ const PROJECTS = [
       ckb: "سیستەمی بەڕێوەبردنی بەشەناوخۆییەکانی زانکۆ، کە وەرگرتنی خوێندکاران، دابەشکردنی ژوورەکان، ڕاپۆرتی PDF و ئاگادارکردنەوە لەخۆ دەگرێت. وەک ماڵپەڕ و ئەپی iOS و Android پێشکەش کراوە.",
     },
     tags: ["Flask", "PostgreSQL", "Redis", "Flutter", "Firebase"],
-    link: "https://dorm.uor.edu.krd",
+    links: [
+      "https://dorm.uor.edu.krd",
+      { href: "https://play.google.com/store/apps/details?id=krd.uor.dormitory", label: "Google Play" },
+    ],
   },
   {
     status: "production",
     title: { en: "UOR Air Quality", ckb: "UOR Air Quality" },
     body: {
-      en: "Air-quality monitoring platform for the region, comprising a website and a mobile application published on the App Store.",
-      ckb: "پلاتفۆرمی چاودێریکردنی کوالیتیی هەوا بۆ ناوچەکە، پێکهاتوو لە ماڵپەڕێک و ئەپێکی مۆبایل کە لە App Store بڵاوکراوەتەوە.",
+      en: "Air-quality monitoring platform for the region, comprising a website and a mobile application published on the App Store and Google Play.",
+      ckb: "پلاتفۆرمی چاودێریکردنی کوالیتیی هەوا بۆ ناوچەکە، پێکهاتوو لە ماڵپەڕێک و ئەپێکی مۆبایل کە لە App Store و Google Play بڵاوکراوەتەوە.",
     },
     tags: ["Django", "Flutter", "Docker"],
-    link: "https://gwrc-airstation.uor.edu.krd",
+    links: [
+      "https://gwrc-airstation.uor.edu.krd",
+      { href: "https://apps.apple.com/app/id6821161186", label: "App Store" },
+      { href: "https://play.google.com/store/apps/details?id=edu.uor.aqkr_mobile", label: "Google Play" },
+    ],
   },
   {
     status: "production",
@@ -107,27 +116,39 @@ const PROJECTS = [
       ckb: "ماڵپەڕی فەرمیی سەنتەری توێژینەوەی گەرمبوونی جیهانی لە زانکۆی ڕاپەڕین، بە کوردی، ئینگلیزی و عەرەبی، لەگەڵ بەشی GeoLab کە ٢٤ ئەپی Google Earth Engine لەخۆ دەگرێت.",
     },
     tags: ["Wagtail", "Django", "Earth Engine"],
-    link: "https://gwrc.uor.edu.krd",
+    links: ["https://gwrc.uor.edu.krd"],
   },
   {
     status: "production",
     title: { en: "University of Raparin Research Center Website", ckb: "ماڵپەڕی سەنتەری توێژینەوەی زانکۆی ڕاپەڕین" },
     body: {
-      en: "Website of the General Directorate of Research Center at the University of Raparin, in Kurdish, English and Arabic.",
-      ckb: "ماڵپەڕی بەڕێوەبەرایەتیی گشتیی سەنتەری توێژینەوە لە زانکۆی ڕاپەڕین، بە کوردی، ئینگلیزی و عەرەبی.",
+      en: "Website of the General Directorate of Research Center at the University of Raparin, in Kurdish, English and Arabic, with an archive of 63 news items imported from the university website and Facebook.",
+      ckb: "ماڵپەڕی بەڕێوەبەرایەتیی گشتیی سەنتەری توێژینەوە لە زانکۆی ڕاپەڕین، بە کوردی، ئینگلیزی و عەرەبی، لەگەڵ ئەرشیفێکی ٦٣ هەواڵ کە لە ماڵپەڕی زانکۆ و فەیسبووکەوە هێنراون.",
     },
     tags: ["Wagtail", "Django", "PostgreSQL"],
-    link: "https://research.dormitory-uor.online",
+    links: ["https://research.dormitory-uor.online"],
   },
   {
     status: "production",
     title: { en: "College of Science Electronic Library", ckb: "کتێبخانەی ئەلیکترۆنیی کۆلێژی زانست" },
     body: {
-      en: "Public catalogue of scientific resources for the College of Science in eight languages, with an administration panel for library staff.",
-      ckb: "کۆگایەکی گشتیی سەرچاوە زانستییەکانی کۆلێژی زانست بە هەشت زمان، لەگەڵ پانێڵی بەڕێوەبردن بۆ کارمەندانی کتێبخانە.",
+      en: "Digital library of the College of Science, opened with the college library in 2025: a public catalogue of scientific resources, available through QR codes, in eight languages, with an administration panel for library staff.",
+      ckb: "کتێبخانەی دیجیتاڵیی کۆلێژی زانست، کە لە ساڵی ٢٠٢٥ لەگەڵ کتێبخانەی کۆلێژ کرایەوە: کۆگایەکی گشتیی سەرچاوە زانستییەکان کە لە ڕێگەی QR کۆدەوە بەردەستن، بە هەشت زمان، لەگەڵ پانێڵی بەڕێوەبردن بۆ کارمەندانی کتێبخانە.",
     },
-    tags: ["Laravel", "PHP", "SQLite"],
-    link: "https://dormitory-uor.online",
+    team: { en: "Team project, 3 members. Role: website developer.", ckb: "پڕۆژەی بەکۆمەڵ، ٣ ئەندام. ڕۆڵ: پەرەپێدەری ماڵپەڕ." },
+    tags: ["Laravel", "React", "Tailwind CSS", "SQLite"],
+    links: ["https://dormitory-uor.online", "https://scence-bio.github.io/library/"],
+  },
+  {
+    status: "production",
+    title: { en: "BioGuide", ckb: "ڕێبەری بایۆلۆجی (BioGuide)" },
+    body: {
+      en: "Bilingual Kurdish–English guide to biology and medical science that explains microscopic structures in ten chapters, from histology and embryology to microbiology, immunology and parasitology. A second version was built as a Flask application with separate English and Kurdish routes.",
+      ckb: "ڕێبەرێکی دووزمانەی کوردی و ئینگلیزی بۆ بایۆلۆجی و زانستی پزیشکی، کە پێکهاتە وردبینییەکان لە دە بەشدا ڕوون دەکاتەوە، لە شانەناسی و کۆرپەلەناسییەوە تا میکرۆبایۆلۆجی، بەرگرییناسی و مشەخۆرناسی. وەشانێکی دووەمیشی وەک ئەپێکی Flask دروست کراوە، بە ڕێڕەوی جیاواز بۆ ئینگلیزی و کوردی.",
+    },
+    team: { en: "BioNova team, 4 members. Role: website developer.", ckb: "تیمی BioNova، ٤ ئەندام. ڕۆڵ: پەرەپێدەری ماڵپەڕ." },
+    tags: ["HTML", "CSS", "JavaScript", "Flask"],
+    links: ["https://scence-bio.github.io/Biology/"],
   },
   {
     status: "production",
@@ -137,7 +158,17 @@ const PROJECTS = [
       ckb: "سەرچاوەیەکی فێرکاریی کراوە بۆ مێرووناسی بە کوردی، عەرەبی و ئینگلیزی، لەگەڵ تاقیکردنەوەی کارلێککار و لیستی باشترینەکان.",
     },
     tags: ["JavaScript", "Supabase", "GitHub Actions"],
-    link: "https://www.entomo.online",
+    links: ["https://www.entomo.online"],
+  },
+  {
+    status: "production",
+    title: { en: "QR Studio Pro", ckb: "QR Studio Pro" },
+    body: {
+      en: "Kurdish-language tool for creating and scanning QR codes for text, links, Wi-Fi, contact cards, locations, email, SMS and phone numbers, with custom colours, frames and logos.",
+      ckb: "ئامرازێکی کوردی بۆ دروستکردن و خوێندنەوەی QR کۆد بۆ دەق، بەستەر، Wi-Fi، کارتی پەیوەندی، شوێن، ئیمەیڵ، SMS و ژمارەی تەلەفۆن، لەگەڵ ڕەنگ، چوارچێوە و لۆگۆی دڵخواز.",
+    },
+    tags: ["Vue.js", "jsQR", "JavaScript"],
+    links: ["https://scence-bio.github.io/Qr-Code/"],
   },
   {
     title: { en: "DNA Analytics", ckb: "DNA Analytics" },
@@ -146,6 +177,16 @@ const PROJECTS = [
       ckb: "ئامرازی شیکردنەوەی ڕیزبەندیی DNA بۆ فێرکردن و توێژینەوە: پێکهاتەی بنکەکان، ڕێژەی GC، چوارچێوە کراوەکانی خوێندنەوە، بەکارهێنانی کۆدۆن و بەراوردی ڕیزبەندییەکانی FASTA.",
     },
     tags: ["Python", "FastAPI", "Biopython"],
+  },
+  {
+    status: "published",
+    title: { en: "Ranya Annual Temperature Dataset (1950–2025)", ckb: "داتاسێتی پلەی گەرمیی ساڵانەی ڕانیە" },
+    body: {
+      en: "Open dataset of the annual mean air temperature over Ranya from 1950 to 2025 (ERA5-Land), with each year's difference from the 1971–2000 average. It is the data behind the warming stripes on the GWRC website.",
+      ckb: "داتاسێتێکی کراوەی تێکڕای پلەی گەرمیی ساڵانەی هەوا لە ڕانیە لە ١٩٥٠ تا ٢٠٢٥ (ERA5-Land)، لەگەڵ جیاوازیی هەر ساڵێک لە تێکڕای ساڵانی ١٩٧١ تا ٢٠٠٠، کە داتای هێڵەکانی گەرمبوونی ماڵپەڕی GWRC ـە.",
+    },
+    tags: ["ERA5-Land", "Open data", "CSV"],
+    links: ["https://gwrc.uor.edu.krd/open-data/"],
   },
   {
     status: "development",
@@ -160,9 +201,10 @@ const PROJECTS = [
 
 const SKILLS = [
   { title: { en: "Backend development", ckb: "پەرەپێدانی باکئێند" }, items: "Python, Django, Wagtail, Flask, FastAPI, Laravel, PostgreSQL, Redis" },
+  { title: { en: "Frontend development", ckb: "پەرەپێدانی فرۆنتئێند" }, items: "HTML, CSS, JavaScript, React, Vue.js, Tailwind CSS" },
   { title: { en: "Mobile development", ckb: "پەرەپێدانی مۆبایل" }, items: "Flutter, Dart, Firebase, App Store, Google Play, Xcode Cloud" },
-  { title: { en: "Infrastructure and deployment", ckb: "ژێرخان و بڵاوکردنەوە" }, items: "Docker, Nginx, Cloudflare, GitHub Actions, Linux" },
-  { title: { en: "Scientific programming", ckb: "پرۆگرامسازیی زانستی" }, items: "Bioinformatics, Biopython, Google Earth Engine, GIS" },
+  { title: { en: "Infrastructure and deployment", ckb: "ژێرخان و بڵاوکردنەوە" }, items: "Docker, Nginx, Cloudflare, GitHub Actions, GitHub Pages, Linux" },
+  { title: { en: "Scientific programming", ckb: "پرۆگرامسازیی زانستی" }, items: "Bioinformatics, Biopython, Google Earth Engine, ERA5-Land, GIS" },
 ];
 
 const CONTACTS = [
@@ -189,6 +231,13 @@ const ICONS = {
 
 const phoneText = (s, lang) =>
   (lang === "ckb" ? s.replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d]) : s).replace(/ /g, "\u00a0");
+
+const linkText = (href) => {
+  const u = new URL(href);
+  const host = u.host.startsWith("www.") ? u.host.slice(4) : u.host;
+  const path = u.pathname.endsWith("/") ? u.pathname.slice(0, -1) : u.pathname;
+  return host + path;
+};
 
 const el = (tag, cls, text) => {
   const node = document.createElement(tag);
@@ -232,12 +281,18 @@ function render(lang) {
     card.append(el("h3", null, p.title[lang]));
     if (p.status) card.append(el("span", p.status === "development" ? "status wip" : "status", t[p.status]));
     card.append(el("p", null, p.body[lang]));
-    if (p.link) {
-      const a = el("a", "link", p.link.replace(/^https:\/\/(www\.)?/, ""));
-      a.href = p.link;
-      a.target = "_blank";
-      a.rel = "noopener";
-      card.append(a);
+    if (p.team) card.append(el("p", "team", p.team[lang]));
+    if (p.links) {
+      const links = el("div", "links");
+      links.append(...p.links.map((l) => {
+        const href = typeof l === "string" ? l : l.href;
+        const a = el("a", "link", typeof l === "string" ? linkText(l) : l.label);
+        a.href = href;
+        a.target = "_blank";
+        a.rel = "noopener";
+        return a;
+      }));
+      card.append(links);
     }
     const tags = el("div", "tags");
     tags.append(...p.tags.map((tag) => el("span", "tag", tag)));

@@ -156,6 +156,8 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; margin-top: 1
 }
 .card h3 { margin: 0; font-size: 1.1rem; line-height: 1.4; }
 .card p { margin: 0; color: var(--muted); }
+.card .team { font-size: .86rem; padding-top: 8px; border-top: 1px solid var(--line); }
+.links { display: flex; flex-wrap: wrap; gap: 4px 18px; }
 .status {
   align-self: flex-start;
   display: inline-flex;
@@ -181,7 +183,7 @@ html[lang="en"] .status { text-transform: uppercase; letter-spacing: .06em; font
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
 .tag { font-size: .76rem; padding: 2px 8px; border-radius: 4px; background: var(--surface); color: var(--muted); }
 
-.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
 .skill-group { border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
 .skill-group h3 { margin: 0 0 8px; font-size: 1rem; color: var(--accent); }
 .skill-group p { margin: 0; color: var(--muted); }
