@@ -230,11 +230,6 @@ function navigateToProjectSection(navigate) {
   navigate("/admin/dashboard#project");
 }
 
-function navigateToProjectSectionPublic(navigate) {
-  rememberSectionTarget("project");
-  navigate("/#project");
-}
-
 function ProjectForm({ formData, onChange, onSubmit, saving, submitLabel, submitHint, existingImageUrl, onBack }) {
   const [imagePreview, setImagePreview] = useState(existingImageUrl || null);
 
@@ -378,7 +373,7 @@ function ProjectForm({ formData, onChange, onSubmit, saving, submitLabel, submit
           Back
         </button>
         <button type="submit" className="btn btn-add" disabled={saving}>
-          {saving ? "Menyimpan..." : submitLabel}
+          {saving ? "Saving..." : submitLabel}
         </button>
       </div>
 
@@ -388,7 +383,6 @@ function ProjectForm({ formData, onChange, onSubmit, saving, submitLabel, submit
 }
 
 function ProjectDetailModal({ project, isAdmin, onClose }) {
-  const location = useLocation();
   const navigate = useNavigate();
   const [deleteTarget, setDeleteTarget] = useState(null);
   const tools = project ? getProjectTools(project) : [];
@@ -801,7 +795,7 @@ function ProjectEditorPage({ mode }) {
                 onSubmit={handleSubmit}
                 saving={saving}
                 submitLabel={isEditMode ? "Save Change" : "Add Project"}
-                submitHint={isEditMode ? `Sedang mengedit: ${currentProject?.nama ?? "-"}` : "Form ini akan menambahkan project baru."}
+                submitHint={isEditMode ? `Editing: ${currentProject?.nama ?? "-"}` : "This form will add a new project."}
                 existingImageUrl={currentProject?.file || null}
                 onBack={() => navigateToProjectSection(navigate)}
               />
@@ -1229,23 +1223,23 @@ function DeleteConfirmModal({ project, onCancel, onConfirm }) {
 
         <div className="delete-modal-body">
           <p>
-            Yakin mau hapus project <strong>{project.nama}</strong>?
+            Delete project <strong>{project.nama}</strong>?
           </p>
           <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginTop: '12px' }}>
-            Data yang dihapus tidak dapat dikembalikan.
+            Deleted data cannot be recovered.
           </p>
         </div>
 
         <div className="delete-modal-footer">
           <button className="btn btn-outline-modern" onClick={onCancel}>
-            Batal
+            Cancel
           </button>
 
           <button
             className="btn btn-delete"
             onClick={() => onConfirm(project)}
           >
-            Hapus
+            Delete
           </button>
         </div>
       </div>

@@ -6,17 +6,14 @@ const AuthContext = createContext();
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [role, setRole] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(() => Boolean(supabase));
 
     useEffect(() => {
-        let active = true;
-
         if (!supabase) {
-            setLoading(false);
-            return () => {
-                active = false;
-            };
+            return undefined;
         }
+
+        let active = true;
 
         async function syncSession() {
             const { data } = await supabase.auth.getUser();

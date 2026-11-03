@@ -283,7 +283,7 @@ export const JOURNEY_CONTENT = {
       place: "Mediated by Astragalus gummifer — Department of Biology, University of Raparin",
       description:
         "Evaluation of antibacterial and antibiofilm activities (graduation research project, in progress).",
-      icon: "bi-flask-fill",
+      icon: "bi-eyedropper",
       projects: [],
     },
   ],

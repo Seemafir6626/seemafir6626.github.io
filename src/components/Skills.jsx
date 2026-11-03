@@ -262,7 +262,7 @@ export default function Skills() {
 
         <div className="skills-grid">
           <div className="skills-row">
-            {displayedSkills.map((skill, index) => (
+            {displayedSkills.map((skill) => (
               <div
                 className="skill-card"
                 key={skill.id}
@@ -359,7 +359,7 @@ function DeleteSkillModal({ skill, onCancel, onConfirm }) {
 
         <div className="skill-delete-body">
           <p>
-            Hapus skill <strong>{skill.nama}</strong>?
+            Delete skill <strong>{skill.nama}</strong>?
           </p>
           <span>Data tidak bisa dikembalikan.</span>
         </div>

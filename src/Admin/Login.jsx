@@ -66,7 +66,7 @@ export default function Login() {
                     </div>
                 </form>
                 <div className="login-footer" data-aos="fade-up" data-aos-delay="360">
-                    <small>Hanya untuk admin yang berwenang</small>
+                    <small>Authorized administrators only</small>
                 </div>
             </div>
         </div>
