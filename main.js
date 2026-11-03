@@ -195,10 +195,10 @@ const PROJECTS = [
     tags: ["Flask", "SQLAlchemy", "Vue.js"],
   },
   {
-    title: { en: "BoKwe Multilingual Website", ckb: "ماڵپەڕی فرەزمانیی BoKwe" },
+    title: { en: "BoKwe Multilingual Website", ckb: "ماڵپەڕی  BoKwe" },
     body: {
-      en: "An earlier multilingual website built with Flask, with per-language routes and a shared content model.",
-      ckb: "ماڵپەڕێکی فرەزمانیی پێشووتر بە Flask دروستکراوە، لەگەڵ ڕێڕەوی جیاواز بۆ هەر زمانێک و مۆدێلێکی ناوەڕۆکی هاوبەش.",
+      en: "An website for Turist.",
+      ckb: "ماڵپەڕێکی خزمەتگوزاری گەشتیاری.",
     },
     tags: ["Flask", "SQLite"],
   },
