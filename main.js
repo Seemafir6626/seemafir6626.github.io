@@ -171,26 +171,26 @@ const PROJECTS = [
     links: ["https://scence-bio.github.io/Qr-Code/"],
   },
   {
-    title: { en: "University of Raparin Quality Assurance System", ckb: "سیستەمی دڵنیایی جۆری زانکۆی ڕاپەڕین" },
+    title: { en: "Quality Assurance System", ckb: "سیستەمی دڵنیایی جۆریی" },
     body: {
       en: "Quality-assurance system for the university: surveys, evaluations and reports with charts and PDF export, in Kurdish, English and Arabic.",
-      ckb: "سیستەمی دڵنیایی جۆر بۆ زانکۆ: ڕاپرسی، هەڵسەنگاندن و ڕاپۆرت لەگەڵ چارت و ئەکسپۆرتی PDF، بە کوردی، ئینگلیزی و عەرەبی.",
+      ckb: "سیستەمی دڵنیایی جۆری بۆ زانکۆ: ڕاپرسی، هەڵسەنگاندن و ڕاپۆرت لەگەڵ چارت و دابەزاندنی PDF، بە کوردی، ئینگلیزی و عەرەبی.",
     },
     tags: ["Django", "PostgreSQL", "Chart.js", "WeasyPrint"],
   },
   {
     title: { en: "Geospatial Reporting Platform", ckb: "پلاتفۆرمی ڕاپۆرتی جووگرافی" },
     body: {
-      en: "Platform for collecting and mapping location-based reports, with a Django backend and a Laravel web client.",
-      ckb: "پلاتفۆرمێک بۆ کۆکردنەوە و نیشاندانی ڕاپۆرت بەپێی شوێن لەسەر نەخشە، لەگەڵ باکئێندی Django و ڕووکارێکی وێبی Laravel.",
+      en: "Platform for collecting and mapping location-based reports.",
+      ckb: "پلاتفۆرمێک بۆ کۆکردنەوە و نیشاندانی ڕاپۆرت بەپێی شوێن لەسەر نەخشە. ",
     },
     tags: ["Django", "Laravel", "SQLite"],
   },
   {
     title: { en: "ERP and Point-of-Sale System", ckb: "سیستەمی ERP و فرۆشتن" },
     body: {
-      en: "Business management system covering customers, products, stock, sales, invoices and returns, with a Vue.js interface and an audit log.",
-      ckb: "سیستەمی بەڕێوەبردنی بازرگانی کە کڕیار، بەرهەم، کۆگا، فرۆشتن، پسووڵە و گەڕاندنەوە دەگرێتەوە، لەگەڵ ڕووکاری Vue.js و تۆماری پشکنین.",
+      en: "Business management system covering customers, products, stock, sales, invoices and returns.",
+      ckb: "سیستەمی بەڕێوەبردنی بازرگانی کە کڕیار، بەرهەم، کۆگا، فرۆشتن، پسووڵە و گەڕاندنەوە دەگرێتەوە.",
     },
     tags: ["Flask", "SQLAlchemy", "Vue.js"],
   },
