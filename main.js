@@ -34,7 +34,7 @@ const TEXT = {
     published: "Published",
     development: "Under development",
     figures: [
-      ["15", "Projects"],
+      ["15+", "Projects"],
       ["8", "Live websites"],
       ["3", "Mobile applications"],
       ["3", "Core languages"],
@@ -72,7 +72,7 @@ const TEXT = {
     published: "بڵاوکراوەتەوە",
     development: "لە قۆناغی پەرەپێداندایە",
     figures: [
-      ["١٥", "پڕۆژە"],
+      ["١٥+", "پڕۆژە"],
       ["٨", "ماڵپەڕی کارا"],
       ["٣", "ئەپی مۆبایل"],
       ["٣", "زمانی سەرەکی"],
