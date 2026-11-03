@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mahmood Khdir — Bioprogrammer</title>
-  <meta name="description" content="Portfolio of Mahmood Khdir: web and mobile projects for the University of Raparin and the life sciences.">
+  <title>Mahmood Khdir — Portfolio</title>
+  <meta name="description" content="Mahmood Khdir, Department of Biology, University of Raparin: web platforms and mobile applications for the university, its research centres and the life sciences.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#top">BoKwe<span>_DEV</span></a>
+    <a class="brand" href="#top" data-i18n="name"></a>
     <nav class="nav">
+      <a href="#profile" data-i18n="nav.profile"></a>
       <a href="#projects" data-i18n="nav.projects"></a>
-      <a href="#skills" data-i18n="nav.skills"></a>
       <a href="#research" data-i18n="nav.research"></a>
+      <a href="#skills" data-i18n="nav.skills"></a>
       <a href="#contact" data-i18n="nav.contact"></a>
     </nav>
     <button class="lang" id="langBtn" type="button" aria-label="Language">کوردی</button>
@@ -21,20 +22,29 @@
 
   <main id="top">
     <section class="hero">
-      <div class="identity">
-        <div class="avatar" id="avatar"></div>
-        <div>
-          <p class="name" data-i18n="hero.name"></p>
-          <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+      <div class="avatar" id="avatar"></div>
+      <div class="hero-text">
+        <h1 data-i18n="name"></h1>
+        <p class="role" data-i18n="hero.role"></p>
+        <p class="affiliation" data-i18n="hero.affiliation"></p>
+        <p class="affiliation" data-i18n="hero.location"></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects" data-i18n="hero.projects"></a>
+          <a class="btn" href="#contact" data-i18n="hero.contact"></a>
         </div>
       </div>
-      <h1 data-i18n="hero.title"></h1>
-      <p class="lead" data-i18n="hero.lead"></p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#projects" data-i18n="hero.cta"></a>
-        <a class="btn" href="https://github.com/mahmodfaqe" target="_blank" rel="noopener">GitHub</a>
+    </section>
+
+    <ul class="figures" id="figures"></ul>
+
+    <section id="profile" class="section">
+      <h2 data-i18n="profile.title"></h2>
+      <p class="prose" data-i18n="profile.body"></p>
+      <h3 class="subhead" data-i18n="education.title"></h3>
+      <div class="entry">
+        <p class="entry-title" data-i18n="education.degree"></p>
+        <p class="entry-meta" data-i18n="education.place"></p>
       </div>
-      <ul class="stats" id="stats"></ul>
     </section>
 
     <section id="projects" class="section">
@@ -43,22 +53,22 @@
       <div class="grid" id="projectGrid"></div>
     </section>
 
+    <section id="research" class="section">
+      <h2 data-i18n="research.title"></h2>
+      <div class="entry">
+        <p class="entry-title"><span data-i18n="research.before"></span><em>Astragalus gummifer</em><span data-i18n="research.after"></span></p>
+        <p class="entry-meta" data-i18n="research.meta"></p>
+      </div>
+    </section>
+
     <section id="skills" class="section">
       <h2 data-i18n="skills.title"></h2>
       <div class="skills" id="skillGroups"></div>
     </section>
 
-    <section id="research" class="section research">
-      <h2 data-i18n="research.title"></h2>
-      <div class="research-card">
-        <h3 data-i18n="research.name"></h3>
-        <p data-i18n="research.body"></p>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
+    <section id="contact" class="section">
       <h2 data-i18n="contact.title"></h2>
-      <p data-i18n="contact.body"></p>
+      <p class="section-lead" data-i18n="contact.body"></p>
       <div class="contacts" id="contactGrid"></div>
     </section>
   </main>

@@ -2,161 +2,178 @@
 const PHOTO = "photo.jpg";
 
 const TEXT = {
-  ckb: {
-    "doc.title": "مەحموود خدر — بایۆپرۆگرامەر",
-    "hero.name": "مەحموود خدر",
-    "nav.projects": "پڕۆژەکان",
-    "nav.skills": "شارەزایی",
-    "nav.research": "توێژینەوە",
-    "nav.contact": "پەیوەندی",
-    "hero.eyebrow": "بایۆپرۆگرامەر، ڕانیە",
-    "hero.title": "سیستەمی دیجیتاڵی بۆ زانکۆ و زانستی ژیان دروست دەکەم.",
-    "hero.lead": "خوێندکاری بایۆلۆجی لە زانکۆی ڕاپەڕین و پەرەپێدەری وێب و مۆبایل. ماڵپەڕ و ئەپی فرەزمانی (کوردی، ئینگلیزی و عەرەبی) دروست دەکەم، لە داتابەیسەوە تا بڵاوکردنەوە لە App Store و Google Play.",
-    "hero.cta": "پڕۆژەکان ببینە",
-    "projects.title": "پڕۆژەکان",
-    "projects.lead": "هەموویان لە سەرەتاوە تا کۆتایی بە خۆم دروست کراون: دیزاین، باکئێند، ئەپ و سێرڤەر.",
-    "skills.title": "شارەزایی",
-    "research.title": "توێژینەوەی زانستی",
-    "research.name": "نانۆپارتیکڵەکانی MgO–ZnO–CuO و ڕووەکی Astragalus gummifer",
-    "research.body": "توێژینەوەی دەرچوونی بەشی بایۆلۆجی لە زانکۆی ڕاپەڕین، لەگەڵ کۆکردنەوەی سەرچاوەی زانستی پشتڕاستکراوە و پۆستەری کارکردن.",
-    "contact.title": "پەیوەندی",
-    "contact.body": "بۆ پڕۆژەیەکی نوێ، هاوکاری یان پرسیار، نامەم بۆ بنێرە.",
-    "footer": "© ٢٠٢٦ مەحموود خدر، ڕانیە، هەرێمی کوردستان",
-    live: "کارا",
-    wip: "لە کاردایە",
-    stats: [
-      ["٨", "پڕۆژەی سەرەکی"],
-      ["٥", "ماڵپەڕی کارا"],
-      ["٣", "ئەپی Flutter"],
-      ["٣+", "زمان لە هەر پڕۆژەیەک"],
+  en: {
+    "doc.title": "Mahmood Khdir — Portfolio",
+    name: "Mahmood Khdir",
+    "nav.profile": "Profile",
+    "nav.projects": "Projects",
+    "nav.research": "Research",
+    "nav.skills": "Skills",
+    "nav.contact": "Contact",
+    "hero.role": "Biology Student and Web & Mobile Developer",
+    "hero.affiliation": "Department of Biology, College of Science, University of Raparin",
+    "hero.location": "Ranya, Kurdistan Region – Iraq",
+    "hero.projects": "View projects",
+    "hero.contact": "Contact",
+    "profile.title": "Profile",
+    "profile.body": "I am an undergraduate student in the Department of Biology, College of Science, University of Raparin. Alongside my studies, I design and develop web platforms and mobile applications for the university, its research centres and the life sciences. My work covers system design, backend development, mobile applications and server administration, with a particular focus on multilingual platforms in Kurdish, English and Arabic.",
+    "education.title": "Education",
+    "education.degree": "Bachelor of Science in Biology (in progress)",
+    "education.place": "Department of Biology, College of Science, University of Raparin, Ranya",
+    "projects.title": "Selected Projects",
+    "projects.lead": "All of the projects below were designed and developed by me, from requirements to deployment.",
+    "research.title": "Research",
+    "research.before": "Green Synthesis of a MgO–ZnO–CuO Ternary Nanocomposite Mediated by ",
+    "research.after": " and Evaluation of Its Antibacterial and Antibiofilm Activities",
+    "research.meta": "Graduation research project (in progress), Department of Biology, University of Raparin",
+    "skills.title": "Technical Skills",
+    "contact.title": "Contact",
+    "contact.body": "For academic collaboration, project enquiries or professional correspondence, please use any of the channels below.",
+    footer: "© 2026 Mahmood Khdir. All rights reserved.",
+    production: "In production",
+    development: "Under development",
+    figures: [
+      ["8", "Projects"],
+      ["6", "Live websites"],
+      ["3", "Mobile applications"],
+      ["3", "Languages supported"],
     ],
   },
-  en: {
-    "doc.title": "Mahmood Khdir — Bioprogrammer",
-    "hero.name": "Mahmood Khdir",
-    "nav.projects": "Projects",
-    "nav.skills": "Skills",
-    "nav.research": "Research",
-    "nav.contact": "Contact",
-    "hero.eyebrow": "Bioprogrammer, Ranya",
-    "hero.title": "I build digital systems for universities and the life sciences.",
-    "hero.lead": "Biology student at the University of Raparin and web & mobile developer. I build multilingual sites and apps (Kurdish, English and Arabic), from the database to release on the App Store and Google Play.",
-    "hero.cta": "See the projects",
-    "projects.title": "Projects",
-    "projects.lead": "Each one built end to end by me: design, backend, app and server.",
-    "skills.title": "Skills",
-    "research.title": "Research",
-    "research.name": "MgO–ZnO–CuO nanoparticles and Astragalus gummifer",
-    "research.body": "Undergraduate thesis in Biology at the University of Raparin, with a verified reference collection and a workflow poster.",
-    "contact.title": "Contact",
-    "contact.body": "For a new project, a collaboration or a question, send me a message.",
-    "footer": "© 2026 Mahmood Khdir, Ranya, Kurdistan Region",
-    live: "Live",
-    wip: "In progress",
-    stats: [
-      ["8", "major projects"],
-      ["5", "live websites"],
-      ["3", "Flutter apps"],
-      ["3+", "languages per project"],
+  ckb: {
+    "doc.title": "مەحموود خدر — پۆرتفۆلیۆ",
+    name: "مەحموود خدر",
+    "nav.profile": "ناساندن",
+    "nav.projects": "پڕۆژەکان",
+    "nav.research": "توێژینەوە",
+    "nav.skills": "شارەزایی",
+    "nav.contact": "پەیوەندی",
+    "hero.role": "خوێندکاری بایۆلۆجی و پەرەپێدەری وێب و مۆبایل",
+    "hero.affiliation": "بەشی بایۆلۆجی، کۆلێژی زانست، زانکۆی ڕاپەڕین",
+    "hero.location": "ڕانیە، هەرێمی کوردستان – عێراق",
+    "hero.projects": "بینینی پڕۆژەکان",
+    "hero.contact": "پەیوەندیکردن",
+    "profile.title": "ناساندن",
+    "profile.body": "خوێندکاری بەشی بایۆلۆجیم لە کۆلێژی زانستی زانکۆی ڕاپەڕین. لە پاڵ خوێندندا، پلاتفۆرمی وێب و ئەپی مۆبایل بۆ زانکۆ و سەنتەرە توێژینەوەییەکانی و بواری زانستەکانی ژیان دیزاین دەکەم و پەرەیان پێدەدەم. کارەکانم دیزاینی سیستەم، پەرەپێدانی باکئێند، ئەپی مۆبایل و بەڕێوەبردنی سێرڤەر دەگرنەوە، بە گرنگیدانێکی تایبەت بە پلاتفۆرمی فرەزمانی بە کوردی، ئینگلیزی و عەرەبی.",
+    "education.title": "خوێندن",
+    "education.degree": "بەکالۆریۆس لە بایۆلۆجی (بەردەوامە)",
+    "education.place": "بەشی بایۆلۆجی، کۆلێژی زانست، زانکۆی ڕاپەڕین، ڕانیە",
+    "projects.title": "پڕۆژە هەڵبژێردراوەکان",
+    "projects.lead": "هەموو ئەم پڕۆژانە، لە داواکارییەکانەوە تا بڵاوکردنەوە، لەلایەن خۆمەوە دیزاین کراون و پەرەیان پێدراوە.",
+    "research.title": "توێژینەوە",
+    "research.before": "سەنتێزی سەوزی نانۆکۆمپۆزیتی سێیانەی MgO–ZnO–CuO بە یارمەتیی ڕووەکی ",
+    "research.after": " و هەڵسەنگاندنی چالاکییە دژە بەکتریایی و دژە بایۆفیلمییەکانی",
+    "research.meta": "پڕۆژەی توێژینەوەی دەرچوون (بەردەوامە)، بەشی بایۆلۆجی، زانکۆی ڕاپەڕین",
+    "skills.title": "شارەزایی تەکنیکی",
+    "contact.title": "پەیوەندی",
+    "contact.body": "بۆ هاوکاریی ئەکادیمی، پرسیار دەربارەی پڕۆژەکان یان نامەی فەرمی، دەتوانن لە ڕێگەی یەکێک لەم کەناڵانەوە پەیوەندیم پێوە بکەن.",
+    footer: "© ٢٠٢٦ مەحموود خدر. هەموو مافەکان پارێزراون.",
+    production: "لە بەکارهێناندایە",
+    development: "لە قۆناغی پەرەپێداندایە",
+    figures: [
+      ["٨", "پڕۆژە"],
+      ["٦", "ماڵپەڕی کارا"],
+      ["٣", "ئەپی مۆبایل"],
+      ["٣", "زمانی پشتگیریکراو"],
     ],
   },
 };
 
 const PROJECTS = [
   {
-    status: "live",
-    title: { ckb: "سیستەمی بەشەناوخۆییەکانی زانکۆی ڕاپەڕین", en: "UoR Dormitory System" },
+    status: "production",
+    title: { en: "University of Raparin Dormitory System", ckb: "سیستەمی بەشەناوخۆییەکانی زانکۆی ڕاپەڕین" },
     body: {
-      ckb: "بەڕێوەبردنی بەشەناوخۆییەکان: وەرگرتنی خوێندکار، ژوورەکان، ڕاپۆرتی PDF و ئاگادارکردنەوە. وێب و ئەپی iOS و Android.",
-      en: "Dormitory management: student admission, rooms, PDF reports and push notifications. Web plus iOS and Android apps.",
+      en: "Management system for the university dormitories, covering student admission, room allocation, PDF reporting and push notifications. Delivered as a web application with iOS and Android apps.",
+      ckb: "سیستەمی بەڕێوەبردنی بەشەناوخۆییەکانی زانکۆ، کە وەرگرتنی خوێندکاران، دابەشکردنی ژوورەکان، ڕاپۆرتی PDF و ئاگادارکردنەوە لەخۆ دەگرێت. وەک ماڵپەڕ و ئەپی iOS و Android پێشکەش کراوە.",
     },
     tags: ["Flask", "PostgreSQL", "Redis", "Flutter", "Firebase"],
+    link: "https://dorm.uor.edu.krd",
   },
   {
-    status: "live",
-    title: { ckb: "UOR Air Quality", en: "UOR Air Quality" },
+    status: "production",
+    title: { en: "UOR Air Quality", ckb: "UOR Air Quality" },
     body: {
-      ckb: "چاودێریی کوالیتیی هەوا بۆ ناوچەکە، بە ئەپی مۆبایل کە لە App Store بڵاوکراوەتەوە.",
-      en: "Air-quality monitoring for the region, with a mobile app published on the App Store.",
+      en: "Air-quality monitoring platform for the region, comprising a website and a mobile application published on the App Store.",
+      ckb: "پلاتفۆرمی چاودێریکردنی کوالیتیی هەوا بۆ ناوچەکە، پێکهاتوو لە ماڵپەڕێک و ئەپێکی مۆبایل کە لە App Store بڵاوکراوەتەوە.",
     },
     tags: ["Django", "Flutter", "Docker"],
+    link: "https://gwrc-airstation.uor.edu.krd",
   },
   {
-    status: "live",
-    title: { ckb: "سەنتەری توێژینەوەی گەرمبوونی جیهانی", en: "Global Warming Research Center" },
+    status: "production",
+    title: { en: "Global Warming Research Center Website", ckb: "ماڵپەڕی سەنتەری توێژینەوەی گەرمبوونی جیهانی" },
     body: {
-      ckb: "ماڵپەڕی سەنتەر بە سێ زمان، لەگەڵ ٢٤ ئەپی Google Earth Engine لە بەشی GeoLab.",
-      en: "The center's trilingual website, with GeoLab: 24 Google Earth Engine apps.",
+      en: "Official website of the Global Warming Research Center at the University of Raparin, in Kurdish, English and Arabic, including GeoLab, a collection of 24 Google Earth Engine applications.",
+      ckb: "ماڵپەڕی فەرمیی سەنتەری توێژینەوەی گەرمبوونی جیهانی لە زانکۆی ڕاپەڕین، بە کوردی، ئینگلیزی و عەرەبی، لەگەڵ بەشی GeoLab کە ٢٤ ئەپی Google Earth Engine لەخۆ دەگرێت.",
     },
     tags: ["Wagtail", "Django", "Earth Engine"],
     link: "https://gwrc.uor.edu.krd",
   },
   {
-    status: "live",
-    title: { ckb: "سەنتەری توێژینەوەی زانکۆی ڕاپەڕین", en: "UoR Research Center" },
+    status: "production",
+    title: { en: "University of Raparin Research Center Website", ckb: "ماڵپەڕی سەنتەری توێژینەوەی زانکۆی ڕاپەڕین" },
     body: {
-      ckb: "ماڵپەڕی بەڕێوەبەرایەتیی گشتیی سەنتەری توێژینەوە، بە کوردی، ئینگلیزی و عەرەبی.",
-      en: "Website of the General Directorate of Research Center, in Kurdish, English and Arabic.",
+      en: "Website of the General Directorate of Research Center at the University of Raparin, in Kurdish, English and Arabic.",
+      ckb: "ماڵپەڕی بەڕێوەبەرایەتیی گشتیی سەنتەری توێژینەوە لە زانکۆی ڕاپەڕین، بە کوردی، ئینگلیزی و عەرەبی.",
     },
     tags: ["Wagtail", "Django", "PostgreSQL"],
     link: "https://research.dormitory-uor.online",
   },
   {
-    status: "live",
-    title: { ckb: "کتێبخانەی ئەلیکترۆنیی کۆلێژی زانست", en: "College of Science e-Library" },
+    status: "production",
+    title: { en: "College of Science Electronic Library", ckb: "کتێبخانەی ئەلیکترۆنیی کۆلێژی زانست" },
     body: {
-      ckb: "کتێبخانەی سەرچاوە زانستییەکان بە هەشت زمان، لەگەڵ پانێڵی بەڕێوەبردن بۆ ستاف.",
-      en: "A catalogue of scientific resources in eight languages, with an admin panel for staff.",
+      en: "Public catalogue of scientific resources for the College of Science in eight languages, with an administration panel for library staff.",
+      ckb: "کۆگایەکی گشتیی سەرچاوە زانستییەکانی کۆلێژی زانست بە هەشت زمان، لەگەڵ پانێڵی بەڕێوەبردن بۆ کارمەندانی کتێبخانە.",
     },
     tags: ["Laravel", "PHP", "SQLite"],
     link: "https://dormitory-uor.online",
   },
   {
-    status: "live",
-    title: { ckb: "ئەتڵەسی مێرووناسی", en: "Atlas of Entomology" },
+    status: "production",
+    title: { en: "Atlas of Entomology", ckb: "ئەتڵەسی مێرووناسی" },
     body: {
-      ckb: "سەرچاوەیەکی فێرکاریی کراوە بۆ مێرووناسی، لەگەڵ تاقیکردنەوە و لیستی باشترینەکان.",
-      en: "An open learning resource for entomology, with quizzes and a leaderboard.",
+      en: "Open educational resource on entomology in Kurdish, Arabic and English, with interactive quizzes and a leaderboard.",
+      ckb: "سەرچاوەیەکی فێرکاریی کراوە بۆ مێرووناسی بە کوردی، عەرەبی و ئینگلیزی، لەگەڵ تاقیکردنەوەی کارلێککار و لیستی باشترینەکان.",
     },
     tags: ["JavaScript", "Supabase", "GitHub Actions"],
     link: "https://www.entomo.online",
   },
   {
-    status: "live",
-    title: { ckb: "DNA Analytics", en: "DNA Analytics" },
+    title: { en: "DNA Analytics", ckb: "DNA Analytics" },
     body: {
-      ckb: "شیکردنەوەی فایلی FASTA: پێکهاتەی بنکەکان، GC، چوارچێوەی خوێندنەوە، کۆدۆن و بەراوردی ڕیزبەندی.",
-      en: "FASTA analysis: base composition, GC content, reading frames, codon usage and sequence comparison.",
+      en: "Sequence-analysis tool for teaching and research: base composition, GC content, open reading frames, codon usage and aligned comparison of FASTA sequences.",
+      ckb: "ئامرازی شیکردنەوەی ڕیزبەندیی DNA بۆ فێرکردن و توێژینەوە: پێکهاتەی بنکەکان، ڕێژەی GC، چوارچێوە کراوەکانی خوێندنەوە، بەکارهێنانی کۆدۆن و بەراوردی ڕیزبەندییەکانی FASTA.",
     },
-    tags: ["Python", "Bioinformatics", "Docker"],
+    tags: ["Python", "FastAPI", "Biopython"],
   },
   {
-    status: "wip",
-    title: { ckb: "عەقار", en: "aqar" },
+    status: "development",
+    title: { en: "aqar Real-Estate Platform", ckb: "پلاتفۆرمی خانووبەرەی عەقار" },
     body: {
-      ckb: "پلاتفۆرمی خانووبەرە: ئاژانس، بەشداریکردن و نەخشە، بە ئەپی مۆبایل.",
-      en: "A real-estate platform: agencies, subscriptions and maps, with a mobile app.",
+      en: "Real-estate platform with agency subscriptions, role-based access and interactive maps, together with a Flutter mobile application.",
+      ckb: "پلاتفۆرمی خانووبەرە لەگەڵ بەشداریی ئاژانسەکان، دەسەڵاتی جیاواز بۆ هەر ڕۆڵێک و نەخشەی کارلێککار، هاوشان لەگەڵ ئەپێکی مۆبایلی Flutter.",
     },
     tags: ["Django REST", "Flutter", "Redis"],
   },
 ];
 
 const SKILLS = [
-  { title: { ckb: "باکئێند", en: "Backend" }, items: "Python, Django, Wagtail, Flask, Laravel, PostgreSQL, Redis" },
-  { title: { ckb: "مۆبایل", en: "Mobile" }, items: "Flutter, Dart, Firebase, App Store, Google Play, Xcode Cloud" },
-  { title: { ckb: "سێرڤەر", en: "DevOps" }, items: "Docker, Nginx, Cloudflare, GitHub Actions, Linux" },
-  { title: { ckb: "زانست", en: "Science" }, items: "Biology, Bioinformatics, Google Earth Engine, GIS" },
+  { title: { en: "Backend development", ckb: "پەرەپێدانی باکئێند" }, items: "Python, Django, Wagtail, Flask, FastAPI, Laravel, PostgreSQL, Redis" },
+  { title: { en: "Mobile development", ckb: "پەرەپێدانی مۆبایل" }, items: "Flutter, Dart, Firebase, App Store, Google Play, Xcode Cloud" },
+  { title: { en: "Infrastructure and deployment", ckb: "ژێرخان و بڵاوکردنەوە" }, items: "Docker, Nginx, Cloudflare, GitHub Actions, Linux" },
+  { title: { en: "Scientific programming", ckb: "پرۆگرامسازیی زانستی" }, items: "Bioinformatics, Biopython, Google Earth Engine, GIS" },
 ];
 
 const CONTACTS = [
-  { icon: "whatsapp", label: "WhatsApp", value: "+964 770 469 2000", phone: true, href: "https://wa.me/9647704692000", color: "#1a9e4b" },
-  { icon: "viber", label: "Viber", value: "+964 770 469 2000", phone: true, href: "viber://chat?number=%2B9647704692000", color: "#7360f2" },
-  { icon: "telegram", label: "Telegram", value: "+964 750 708 7901", phone: true, href: "https://t.me/+9647507087901", color: "#1c8ad6" },
-  { icon: "facebook", label: "Facebook", value: "mahmod.faqe", href: "https://www.facebook.com/mahmod.faqe", color: "#1877f2" },
-  { icon: "messenger", label: "Messenger", value: "mahmod.faqe", href: "https://m.me/mahmod.faqe", color: "linear-gradient(135deg, #0a7cff, #a334fa)" },
-  { icon: "snapchat", label: "Snapchat", value: "mahmod.faqe", href: "https://www.snapchat.com/add/mahmod.faqe", color: "#fffc00", ink: "#1c1f1d" },
-  { icon: "mail", label: { ckb: "ئیمەیڵ", en: "Email" }, value: "mahmodfaqe2@gmail.com", href: "mailto:mahmodfaqe2@gmail.com", color: "#3a7c62" },
-  { icon: "github", label: "GitHub", value: "mahmodfaqe", href: "https://github.com/mahmodfaqe", color: "#24292f" },
+  { icon: "mail", label: { en: "Email", ckb: "ئیمەیڵ" }, value: "mahmodfaqe2@gmail.com", href: "mailto:mahmodfaqe2@gmail.com" },
+  { icon: "whatsapp", label: "WhatsApp", value: "+964 770 469 2000", phone: true, href: "https://wa.me/9647704692000" },
+  { icon: "viber", label: "Viber", value: "+964 770 469 2000", phone: true, href: "viber://chat?number=%2B9647704692000" },
+  { icon: "telegram", label: "Telegram", value: "+964 750 708 7901", phone: true, href: "https://t.me/+9647507087901" },
+  { icon: "github", label: "GitHub", value: "mahmodfaqe", href: "https://github.com/mahmodfaqe" },
+  { icon: "facebook", label: "Facebook", value: "mahmod.faqe", href: "https://www.facebook.com/mahmod.faqe" },
+  { icon: "messenger", label: "Messenger", value: "mahmod.faqe", href: "https://m.me/mahmod.faqe" },
+  { icon: "snapchat", label: "Snapchat", value: "mahmod.faqe", href: "https://www.snapchat.com/add/mahmod.faqe" },
 ];
 
 const ICONS = {
@@ -165,7 +182,7 @@ const ICONS = {
   telegram: '<path fill="currentColor" stroke="none" d="M21.4 3.6 2.8 10.8c-1.3.5-1.3 1.3-.2 1.6l4.7 1.5 1.8 5.5c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.2-15.1c.3-1.3-.5-1.9-1.5-1.5zM9.1 13.9l8.7-5.5c.4-.3.8-.1.5.2l-7.3 6.6-.3 3.3z"/>',
   facebook: '<path fill="currentColor" stroke="none" d="M14 8h2.5V4.5H14c-2.8 0-4.5 1.8-4.5 4.6V11H7v3.5h2.5V22h3.6v-7.5h2.7l.5-3.5h-3.2V9.4c0-.9.3-1.4.9-1.4z"/>',
   messenger: '<path d="M12 3C6.9 3 3 6.7 3 11.5c0 2.6 1.1 4.9 3 6.5v3l2.9-1.6c1 .3 2 .4 3.1.4 5.1 0 9-3.7 9-8.5S17.1 3 12 3z"/><path fill="currentColor" stroke="none" d="M6.8 14.3 10 10.8l2.3 2.3 4.9-2.6-3.3 3.6-2.3-2.3z"/>',
-  snapchat: '<path fill="#fff" stroke-width="1.4" d="M12 3.5c-2.6 0-4.5 2-4.5 4.6v2.1l-1.2-.4c-.6-.2-1 .5-.5.9.5.4 1.2.7 1.7.9-.6 1.6-1.8 2.8-3.3 3.4-.4.2-.3.7.1.8.8.2 1.3.4 1.5.8.1.3.1.8.5.8.6 0 1.5-.2 2.4.3.9.5 1.7 1.3 3.3 1.3s2.4-.8 3.3-1.3c.9-.5 1.8-.3 2.4-.3.4 0 .4-.5.5-.8.2-.4.7-.6 1.5-.8.4-.1.5-.6.1-.8-1.5-.6-2.7-1.8-3.3-3.4.5-.2 1.2-.5 1.7-.9.5-.4.1-1.1-.5-.9l-1.2.4V8.1c0-2.6-1.9-4.6-4.5-4.6z"/>',
+  snapchat: '<path d="M12 3.5c-2.6 0-4.5 2-4.5 4.6v2.1l-1.2-.4c-.6-.2-1 .5-.5.9.5.4 1.2.7 1.7.9-.6 1.6-1.8 2.8-3.3 3.4-.4.2-.3.7.1.8.8.2 1.3.4 1.5.8.1.3.1.8.5.8.6 0 1.5-.2 2.4.3.9.5 1.7 1.3 3.3 1.3s2.4-.8 3.3-1.3c.9-.5 1.8-.3 2.4-.3.4 0 .4-.5.5-.8.2-.4.7-.6 1.5-.8.4-.1.5-.6.1-.8-1.5-.6-2.7-1.8-3.3-3.4.5-.2 1.2-.5 1.7-.9.5-.4.1-1.1-.5-.9l-1.2.4V8.1c0-2.6-1.9-4.6-4.5-4.6z"/>',
   mail: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
   github: '<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/>',
 };
@@ -185,7 +202,7 @@ function render(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ckb" ? "rtl" : "ltr";
   document.title = t["doc.title"];
-  document.getElementById("langBtn").textContent = lang === "ckb" ? "EN" : "کوردی";
+  document.getElementById("langBtn").textContent = lang === "ckb" ? "English" : "کوردی";
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     node.textContent = t[node.dataset.i18n];
@@ -195,15 +212,15 @@ function render(lang) {
   if (PHOTO) {
     const img = el("img");
     img.src = PHOTO;
-    img.alt = t["hero.name"];
+    img.alt = t.name;
     avatar.replaceChildren(img);
   } else {
     avatar.textContent = "MK";
     avatar.setAttribute("aria-hidden", "true");
   }
 
-  const stats = document.getElementById("stats");
-  stats.replaceChildren(...t.stats.map(([n, label]) => {
+  const figures = document.getElementById("figures");
+  figures.replaceChildren(...t.figures.map(([n, label]) => {
     const li = el("li");
     li.append(el("strong", null, n), el("span", null, label));
     return li;
@@ -212,11 +229,9 @@ function render(lang) {
   const grid = document.getElementById("projectGrid");
   grid.replaceChildren(...PROJECTS.map((p) => {
     const card = el("article", "card");
-    card.append(
-      el("span", p.status === "wip" ? "badge wip" : "badge", t[p.status]),
-      el("h3", null, p.title[lang]),
-      el("p", null, p.body[lang]),
-    );
+    card.append(el("h3", null, p.title[lang]));
+    if (p.status) card.append(el("span", p.status === "development" ? "status wip" : "status", t[p.status]));
+    card.append(el("p", null, p.body[lang]));
     if (p.link) {
       const a = el("a", "link", p.link.replace(/^https:\/\/(www\.)?/, ""));
       a.href = p.link;
@@ -233,10 +248,12 @@ function render(lang) {
   const skills = document.getElementById("skillGroups");
   skills.replaceChildren(...SKILLS.map((s) => {
     const box = el("div", "skill-group");
-    box.append(el("h3", null, s.title[lang]), el("p", null, s.items));
-    box.lastChild.dir = "ltr";
+    const items = el("p", null, s.items);
+    items.dir = "ltr";
+    box.append(el("h3", null, s.title[lang]), items);
     return box;
   }));
+
   const contacts = document.getElementById("contactGrid");
   contacts.replaceChildren(...CONTACTS.map((c) => {
     const card = el("a", "contact-card");
@@ -246,9 +263,7 @@ function render(lang) {
       card.rel = "noopener";
     }
     const icon = el("span", "contact-icon");
-    icon.style.background = c.color;
-    if (c.ink) icon.style.color = c.ink;
-    icon.innerHTML = `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICONS[c.icon]}</svg>`;
+    icon.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICONS[c.icon]}</svg>`;
     const value = el("span", "contact-value", c.phone ? phoneText(c.value, lang) : c.value);
     value.dir = "ltr";
     const text = el("span", "contact-text");
@@ -260,6 +275,7 @@ function render(lang) {
 
 let current = "en";
 try { current = localStorage.getItem("lang") || "en"; } catch (e) {}
+if (!TEXT[current]) current = "en";
 render(current);
 
 document.getElementById("langBtn").addEventListener("click", () => {
