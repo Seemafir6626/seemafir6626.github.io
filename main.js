@@ -16,7 +16,7 @@ const TEXT = {
     "hero.projects": "View projects",
     "hero.contact": "Contact",
     "profile.title": "Profile",
-    "profile.body": "I am an undergraduate student in the Department of Biology, College of Science, University of Raparin. Alongside my studies, I design and develop web platforms and mobile applications for the university, its research centres and the life sciences. My work covers system design, backend development, mobile applications and server administration, with a particular focus on multilingual platforms in Kurdish, English and Arabic.",
+    "profile.body": "I am an undergraduate student in the Department of Biology, College of Science, University of Raparin. Alongside my studies, I design and develop web platforms and mobile applications for the university, its research centres and the life sciences. My work covers system design, backend development, mobile applications and server administration, with a particular focus on multilingual platforms in Kurdish, English and Arabic. I also provide server and VPS provisioning and management, and website security, for other clients.",
     "education.title": "Education",
     "education.degree": "Bachelor of Science in Biology (in progress)",
     "education.place": "Department of Biology, College of Science, University of Raparin, Ranya",
@@ -54,7 +54,7 @@ const TEXT = {
     "hero.projects": "بینینی پڕۆژەکان",
     "hero.contact": "پەیوەندیکردن",
     "profile.title": "ناساندن",
-    "profile.body": "خوێندکاری بەشی بایۆلۆجیم لە کۆلێژی زانستی زانکۆی ڕاپەڕین. لە پاڵ خوێندندا، پلاتفۆرمی وێب و ئەپی مۆبایل بۆ زانکۆ و سەنتەرە توێژینەوەییەکانی و بواری زانستەکانی ژیان دیزاین دەکەم و پەرەیان پێدەدەم. کارەکانم دیزاینی سیستەم، پەرەپێدانی باکئێند، ئەپی مۆبایل و بەڕێوەبردنی سێرڤەر دەگرنەوە، بە گرنگیدانێکی تایبەت بە پلاتفۆرمی فرەزمانی بە کوردی، ئینگلیزی و عەرەبی.",
+    "profile.body": "خوێندکاری بەشی بایۆلۆجیم لە کۆلێژی زانستی زانکۆی ڕاپەڕین. لە پاڵ خوێندندا، پلاتفۆرمی وێب و ئەپی مۆبایل بۆ زانکۆ و سەنتەرە توێژینەوەییەکانی و بواری زانستەکانی ژیان دیزاین دەکەم و پەرەیان پێدەدەم. کارەکانم دیزاینی سیستەم، پەرەپێدانی باکئێند، ئەپی مۆبایل و بەڕێوەبردنی سێرڤەر دەگرنەوە، بە گرنگیدانێکی تایبەت بە پلاتفۆرمی فرەزمانی بە کوردی، ئینگلیزی و عەرەبی. هەروەها دابینکردن و بەڕێوەبردنی سێرڤەر و VPS، و ئاسایشی وێبسایت بۆ کڕیارانی تر پێشکەش دەکەم.",
     "education.title": "خوێندن",
     "education.degree": "بەکالۆریۆس لە بایۆلۆجی (بەردەوامە)",
     "education.place": "بەشی بایۆلۆجی، کۆلێژی زانست، زانکۆی ڕاپەڕین، ڕانیە",
@@ -235,9 +235,9 @@ const SKILLS = [
   { title: { en: "Backend development", ckb: "پەرەپێدانی باکئێند" }, items: "Python, Django, Wagtail, Flask, FastAPI, Laravel, PostgreSQL, Redis" },
   { title: { en: "Frontend development", ckb: "پەرەپێدانی فرۆنتئێند" }, items: "HTML, CSS, JavaScript, React, Vue.js, Tailwind CSS" },
   { title: { en: "Mobile development", ckb: "پەرەپێدانی مۆبایل" }, items: "Flutter, Dart, Firebase, App Store, Google Play, Xcode Cloud" },
-  { title: { en: "Infrastructure and deployment", ckb: "ژێرخان و بڵاوکردنەوە" }, items: "Docker, Nginx, Cloudflare, GitHub Actions, GitHub Pages, Linux" },
+  { title: { en: "Servers and deployment", ckb: "سێرڤەر و بڵاوکردنەوە" }, items: { en: "Server and VPS provisioning and management, Docker, Nginx, Cloudflare, GitHub Actions, Linux", ckb: "دابینکردن و بەڕێوەبردنی سێرڤەر و VPS، Docker، Nginx، Cloudflare، GitHub Actions، Linux" } },
   { title: { en: "Scientific programming", ckb: "پرۆگرامسازیی زانستی" }, items: "Bioinformatics, Biopython, Google Earth Engine, ERA5-Land, GIS" },
-  { title: { en: "Security research", ckb: "توێژینەوەی ئاسایش" }, items: "Web and network security testing, traffic and packet analysis, Linux" },
+  { title: { en: "Website security", ckb: "ئاسایشی وێبسایت" }, items: { en: "HTTPS/TLS, Cloudflare, firewalls, backups and monitoring, security hardening", ckb: "HTTPS/TLS، Cloudflare، Firewall، یەدەگگرتن و چاودێری، بەهێزکردنی ئاسایش" } },
 ];
 
 const CONTACTS = [
@@ -336,8 +336,9 @@ function render(lang) {
   const skills = document.getElementById("skillGroups");
   skills.replaceChildren(...SKILLS.map((s) => {
     const box = el("div", "skill-group");
-    const items = el("p", null, s.items);
-    items.dir = "ltr";
+    const itemsText = typeof s.items === "string" ? s.items : s.items[lang];
+    const items = el("p", null, itemsText);
+    items.dir = typeof s.items === "string" || lang !== "ckb" ? "ltr" : "rtl";
     box.append(el("h3", null, s.title[lang]), items);
     return box;
   }));
