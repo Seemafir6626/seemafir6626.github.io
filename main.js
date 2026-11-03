@@ -143,8 +143,8 @@ const PROJECTS = [
     status: "production",
     title: { en: "BioGuide", ckb: "ڕێبەری بایۆلۆجی (BioGuide)" },
     body: {
-      en: "Bilingual Kurdish–English guide to biology and medical science that explains microscopic structures in ten chapters, from histology and embryology to microbiology, immunology and parasitology. A second version was built as a Flask application with separate English and Kurdish routes.",
-      ckb: "ڕێبەرێکی دووزمانەی کوردی و ئینگلیزی بۆ بایۆلۆجی و زانستی پزیشکی، کە پێکهاتە وردبینییەکان لە دە بەشدا ڕوون دەکاتەوە، لە شانەناسی و کۆرپەلەناسییەوە تا میکرۆبایۆلۆجی، بەرگرییناسی و مشەخۆرناسی. وەشانێکی دووەمیشی وەک ئەپێکی Flask دروست کراوە، بە ڕێڕەوی جیاواز بۆ ئینگلیزی و کوردی.",
+      en: "Bilingual Kurdish–English guide to biology and medical science that explains microscopic structures in ten chapters, from histology and embryology to microbiology, immunology and parasitology. English and Kurdish routes.",
+      ckb: "ڕێبەرێکی دووزمانەی کوردی و ئینگلیزی بۆ بایۆلۆجی و زانستی پزیشکی، کە پێکهاتە وردبینییەکان لە دە بەشدا ڕوون دەکاتەوە، لە شانەناسی و کۆرپەلەناسییەوە تا میکرۆبایۆلۆجی، بەرگرییناسی و مشەخۆرناسی. بەزمانی ئینگلیزی و کوردی.",
     },
     team: { en: "BioNova team, 4 members. Role: website developer.", ckb: "تیمی BioNova، ٤ ئەندام. ڕۆڵ: پەرەپێدەری ماڵپەڕ." },
     tags: ["HTML", "CSS", "JavaScript", "Flask"],
