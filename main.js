@@ -123,7 +123,7 @@ const PROJECTS = [
     title: { en: "University of Raparin Research Center Website", ckb: "ماڵپەڕی سەنتەری توێژینەوەی زانکۆی ڕاپەڕین" },
     body: {
       en: "Website of the General Directorate of Research Center at the University of Raparin, in Kurdish, English and Arabic, with an archive of 63 news items imported from the university website and Facebook.",
-      ckb: "ماڵپەڕی بەڕێوەبەرایەتیی گشتیی سەنتەری توێژینەوە لە زانکۆی ڕاپەڕین، بە کوردی، ئینگلیزی و عەرەبی، لەگەڵ ئەرشیفێکی ٦٣ هەواڵ کە لە ماڵپەڕی زانکۆ و فەیسبووکەوە هێنراون.",
+      ckb: "ماڵپەڕی بەڕێوەبەرایەتیی گشتیی سەنتەری توێژینەوە لە زانکۆی ڕاپەڕین، بە کوردی، ئینگلیزی و عەرەبی.",
     },
     tags: ["Wagtail", "Django", "PostgreSQL"],
     links: ["https://research.dormitory-uor.online"],
