@@ -258,8 +258,8 @@ function render(lang) {
   }));
 }
 
-let current = "ckb";
-try { current = localStorage.getItem("lang") || "ckb"; } catch (e) {}
+let current = "en";
+try { current = localStorage.getItem("lang") || "en"; } catch (e) {}
 render(current);
 
 document.getElementById("langBtn").addEventListener("click", () => {
