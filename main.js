@@ -34,7 +34,7 @@ const TEXT = {
     published: "Published",
     development: "Under development",
     figures: [
-      ["11", "Projects"],
+      ["15", "Projects"],
       ["8", "Live websites"],
       ["3", "Mobile applications"],
       ["3", "Core languages"],
@@ -72,7 +72,7 @@ const TEXT = {
     published: "بڵاوکراوەتەوە",
     development: "لە قۆناغی پەرەپێداندایە",
     figures: [
-      ["١١", "پڕۆژە"],
+      ["١٥", "پڕۆژە"],
       ["٨", "ماڵپەڕی کارا"],
       ["٣", "ئەپی مۆبایل"],
       ["٣", "زمانی سەرەکی"],
@@ -171,6 +171,38 @@ const PROJECTS = [
     links: ["https://scence-bio.github.io/Qr-Code/"],
   },
   {
+    title: { en: "University of Raparin Quality Assurance System", ckb: "سیستەمی دڵنیایی جۆری زانکۆی ڕاپەڕین" },
+    body: {
+      en: "Quality-assurance system for the university: surveys, evaluations and reports with charts and PDF export, in Kurdish, English and Arabic.",
+      ckb: "سیستەمی دڵنیایی جۆر بۆ زانکۆ: ڕاپرسی، هەڵسەنگاندن و ڕاپۆرت لەگەڵ چارت و ئەکسپۆرتی PDF، بە کوردی، ئینگلیزی و عەرەبی.",
+    },
+    tags: ["Django", "PostgreSQL", "Chart.js", "WeasyPrint"],
+  },
+  {
+    title: { en: "Geospatial Reporting Platform", ckb: "پلاتفۆرمی ڕاپۆرتی جووگرافی" },
+    body: {
+      en: "Platform for collecting and mapping location-based reports, with a Django backend and a Laravel web client.",
+      ckb: "پلاتفۆرمێک بۆ کۆکردنەوە و نیشاندانی ڕاپۆرت بەپێی شوێن لەسەر نەخشە، لەگەڵ باکئێندی Django و ڕووکارێکی وێبی Laravel.",
+    },
+    tags: ["Django", "Laravel", "SQLite"],
+  },
+  {
+    title: { en: "ERP and Point-of-Sale System", ckb: "سیستەمی ERP و فرۆشتن" },
+    body: {
+      en: "Business management system covering customers, products, stock, sales, invoices and returns, with a Vue.js interface and an audit log.",
+      ckb: "سیستەمی بەڕێوەبردنی بازرگانی کە کڕیار، بەرهەم، کۆگا، فرۆشتن، پسووڵە و گەڕاندنەوە دەگرێتەوە، لەگەڵ ڕووکاری Vue.js و تۆماری پشکنین.",
+    },
+    tags: ["Flask", "SQLAlchemy", "Vue.js"],
+  },
+  {
+    title: { en: "BoKwe Multilingual Website", ckb: "ماڵپەڕی فرەزمانیی BoKwe" },
+    body: {
+      en: "An earlier multilingual website built with Flask, with per-language routes and a shared content model.",
+      ckb: "ماڵپەڕێکی فرەزمانیی پێشووتر بە Flask دروستکراوە، لەگەڵ ڕێڕەوی جیاواز بۆ هەر زمانێک و مۆدێلێکی ناوەڕۆکی هاوبەش.",
+    },
+    tags: ["Flask", "SQLite"],
+  },
+  {
     title: { en: "DNA Analytics", ckb: "DNA Analytics" },
     body: {
       en: "Sequence-analysis tool for teaching and research: base composition, GC content, open reading frames, codon usage and aligned comparison of FASTA sequences.",
@@ -205,6 +237,7 @@ const SKILLS = [
   { title: { en: "Mobile development", ckb: "پەرەپێدانی مۆبایل" }, items: "Flutter, Dart, Firebase, App Store, Google Play, Xcode Cloud" },
   { title: { en: "Infrastructure and deployment", ckb: "ژێرخان و بڵاوکردنەوە" }, items: "Docker, Nginx, Cloudflare, GitHub Actions, GitHub Pages, Linux" },
   { title: { en: "Scientific programming", ckb: "پرۆگرامسازیی زانستی" }, items: "Bioinformatics, Biopython, Google Earth Engine, ERA5-Land, GIS" },
+  { title: { en: "Security research", ckb: "توێژینەوەی ئاسایش" }, items: "Web and network security testing, traffic and packet analysis, Linux" },
 ];
 
 const CONTACTS = [
