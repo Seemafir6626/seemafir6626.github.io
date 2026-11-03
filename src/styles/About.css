@@ -1,0 +1,235 @@
+.about-section {
+    min-height: calc(var(--viewport-stable-height, 100vh) * 0.92);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-title {
+    font-weight: bold;
+}
+
+.about-section .container,
+.about-section .about {
+    position: relative;
+}
+
+.about-section .about {
+    overflow-x: clip;
+}
+
+.about-section .row {
+    align-items: center;
+    row-gap: 28px;
+}
+
+.about-section .about-title {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.about-section .about-title::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin-top: 12px;
+    background: linear-gradient(90deg, var(--maroon-primary), var(--maroon-accent));
+    border-radius: 999px;
+}
+
+.about-sub-title {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.85;
+    font-size: 1.02rem;
+}
+
+.profile-wrap {
+    position: relative;
+    width: min(100%, 350px);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    isolation: isolate;
+}
+
+.profile-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 90, 100, 0.35), transparent 70%);
+    filter: blur(16px);
+    z-index: 0;
+    animation: glowIdle 3.5s ease-in-out infinite;
+}
+
+.profile-wrap:hover::before {
+    transform: scale(1.1);
+    background: radial-gradient(circle, rgba(255, 110, 120, 0.6), transparent 70%);
+}
+
+.profile-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 90, 100, 0.35);
+    z-index: 0;
+    animation: ringPulse 4s ease-in-out infinite;
+}
+
+.profile-wrap:hover::after {
+    border-color: rgba(255, 120, 130, 0.8);
+}
+
+.profile-img {
+    position: relative;
+    z-index: 1;
+    width: 92%;
+    height: 92%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 90, 100, 0.5);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35),
+        0 0 14px rgba(255, 90, 100, 0.25);
+    transition: all 0.4s ease;
+}
+
+.profile-wrap:hover .profile-img {
+    transform: scale(1.04);
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.45),
+        0 0 28px rgba(255, 100, 110, 0.7);
+}
+
+@keyframes glowIdle {
+
+    0%,
+    100% {
+        transform: scale(0.98);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.04);
+        opacity: 0.9;
+    }
+}
+
+@keyframes ringPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+}
+
+@keyframes softGlowPulse {
+
+    0%,
+    100% {
+        transform: scale(0.98);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.03);
+        opacity: 0.8;
+    }
+}
+
+@keyframes subtleSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes floatSmooth {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes aboutHaloSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aboutImageFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@media (min-width: 992px) {
+    .about-section .row {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-section {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-title {
+        font-size: 2.35rem;
+        padding: 0 10px 8px;
+    }
+
+    .about-sub-title {
+        font-size: 0.96rem;
+        padding: 0 12px;
+        text-align: justify;
+        line-height: 1.75;
+    }
+
+    .profile-wrap {
+        width: min(100%, 320px);
+        padding: 14px;
+        margin-top: -4px;
+    }
+
+    .about-section .about-title::after {
+        content: "";
+        display: block;
+        width: 210px;
+        height: 3px;
+        margin: 8px auto 0;
+    }
+}

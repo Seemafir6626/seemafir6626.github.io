@@ -1,93 +1,29 @@
 <!doctype html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mahmood Khdir — Portfolio</title>
-  <meta name="description" content="Mahmood Khdir, Department of Biology, University of Raparin: web platforms and mobile applications for the university, its research centres and the life sciences.">
-  <meta name="theme-color" content="#1f3d6b">
-  <link rel="canonical" href="https://mahmodfaqe.github.io/">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mahmodfaqe.github.io/">
-  <meta property="og:title" content="Mahmood Khdir — Portfolio">
-  <meta property="og:description" content="Mahmood Khdir, Department of Biology, University of Raparin: web platforms and mobile applications for the university, its research centres and the life sciences.">
-  <meta property="og:image" content="https://mahmodfaqe.github.io/photo.jpg">
-  <meta property="og:image:width" content="400">
-  <meta property="og:image:height" content="400">
-  <meta property="og:image:alt" content="Mahmood Khdir">
-  <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#top" data-i18n="name"></a>
-    <nav class="nav">
-      <a href="#profile" data-i18n="nav.profile"></a>
-      <a href="#projects" data-i18n="nav.projects"></a>
-      <a href="#research" data-i18n="nav.research"></a>
-      <a href="#skills" data-i18n="nav.skills"></a>
-      <a href="#contact" data-i18n="nav.contact"></a>
-    </nav>
-    <button class="lang" id="langBtn" type="button" aria-label="Language">کوردی</button>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="avatar" id="avatar"></div>
-      <div class="hero-text">
-        <h1 data-i18n="name"></h1>
-        <p class="role" data-i18n="hero.role"></p>
-        <p class="affiliation" data-i18n="hero.affiliation"></p>
-        <p class="affiliation" data-i18n="hero.location"></p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects" data-i18n="hero.projects"></a>
-          <a class="btn" href="#contact" data-i18n="hero.contact"></a>
-        </div>
-      </div>
-    </section>
-
-    <ul class="figures" id="figures"></ul>
-
-    <section id="profile" class="section">
-      <h2 data-i18n="profile.title"></h2>
-      <p class="prose" data-i18n="profile.body"></p>
-      <h3 class="subhead" data-i18n="education.title"></h3>
-      <div class="entry">
-        <p class="entry-title" data-i18n="education.degree"></p>
-        <p class="entry-meta" data-i18n="education.place"></p>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2 data-i18n="projects.title"></h2>
-      <p class="section-lead" data-i18n="projects.lead"></p>
-      <div class="grid" id="projectGrid"></div>
-    </section>
-
-    <section id="research" class="section">
-      <h2 data-i18n="research.title"></h2>
-      <div class="entry">
-        <p class="entry-title"><span data-i18n="research.before"></span><em>Astragalus gummifer</em><span data-i18n="research.after"></span></p>
-        <p class="entry-meta" data-i18n="research.meta"></p>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2 data-i18n="skills.title"></h2>
-      <div class="skills" id="skillGroups"></div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2 data-i18n="contact.title"></h2>
-      <p class="section-lead" data-i18n="contact.body"></p>
-      <div class="contacts" id="contactGrid"></div>
-    </section>
-  </main>
-
-  <footer class="footer" data-i18n="footer"></footer>
-
-  <script src="main.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mahmood Khdir, Department of Biology, University of Raparin: web platforms and mobile applications for the university, its research centres and the life sciences.">
+    <meta name="theme-color" content="#5a0000">
+    <link rel="canonical" href="https://mahmodfaqe.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mahmodfaqe.github.io/">
+    <meta property="og:title" content="Mahmood Khdir — Portfolio">
+    <meta property="og:description" content="Mahmood Khdir, Department of Biology, University of Raparin: web platforms and mobile applications for the university, its research centres and the life sciences.">
+    <meta property="og:image" content="https://mahmodfaqe.github.io/photo.jpg">
+    <title>Mahmood Khdir — Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
